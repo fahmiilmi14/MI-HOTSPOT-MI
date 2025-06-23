@@ -1,0 +1,234 @@
+html{
+  user-select: none;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+img{
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 38px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    border: 1px dashed #007bff;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-family: Segoe UI;
+}
+
+.hotspot-color {
+    color: #007bff;
+}
+
+h5{
+  background-color: #007bff;
+  border-radius: 38px;
+  color: white;
+  margin-left: 60px;
+  margin-right: 60px;
+  font-family: Arial;
+}
+
+p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 38px;
+    font-size: 16px;
+    border: 1px dashed #007bff;
+}
+
+.iki{
+  background-color: #f9f9f9;
+  width: 49%;
+  font-size: 16px;
+  text-align: center;
+  font-weight: normal;
+  border: 1px dashed #007bff;
+}
+
+.iki:hover{
+  background-color: #e6f2ff;
+}
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 38px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#paymentStatus {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px dashed #007bff;
+    border-radius: 38px;
+    background-color: #e6f2ff;
+}
+
+#statusMessage {
+    font-weight: bold;
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+#qrCodeContainer {
+    margin-top: 20px;
+}
+
+#qrCodeImage {
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    background-color: #e6f2ff;
+    margin-top: 15px;
+    border-radius:15px;
+}
+
+.info-message {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 10px;
+}
+
+.lolos-utbk {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #007bff;
+    background-color: #f0f8ff;
+    padding: 10px;
+    border-radius: 38px;
+    border: 1px dashed #007bff;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+
+.pegel {
+    margin-top: 40px;
+    text-align: left;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.pegel h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.pegel ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pegel li {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    border-radius: 38px;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    font-size: 0.95em;
+}
+
+.pegel li:nth-child(odd) {
+    background-color: #f9f9f9;
+    border: 1px dashed #007bff;
+}
+
+.pegel li:nth-child(even) {
+    background-color: #e6f2ff; 
+}
+
+.pegel li span {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.mboh{
+  text-align: right;
+  width: 100%; 
+}
+
+.capek{
+  font-weight: bold;
+    color: #007bff;
+}
+
+.timer {
+    font-weight: bold;
+    color: #dc3545; 
+    margin-top: 5px;
+}
+
+.clear-button {
+    text-align: center;
+    background-color: #dc3545;
+    color: white;
+    padding: 8px 8px 8px 8px;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    width: 40px;
+    height: 40px;
+}
+
+.clear-button:hover {
+    background-color: #c82333;
+}

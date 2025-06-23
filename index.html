@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Hotspot Mi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+      <h1><img src="logo.png"></h1>
+        <h1>Mi <span class="hotspot-color">Hotspot</span> Mi</h1>
+        <h5>powered by Ikiaku</h5>
+        <p>Silakan isi detail untuk proses pembayaran. QR code akan berisi kode akses unik.</p>
+
+        <form id="paymentForm">
+            <div class="form-group">
+                <label for="deviceName">Nama Perangkat:</label>
+                <input type="text" id="deviceName" name="deviceName" placeholder="Gak Jujur tak blacklist" required>
+            </div>
+            <div class="form-group">
+                <label>Jenis Perangkat:</label>
+                <button class="iki"><input type="radio" id="deviceTypeHp" name="deviceType" value="hp" checked>
+                <label for="deviceTypeHp">HP (Rp2.000/10 menit)</label></button>  <button class="iki"><input type="radio" id="deviceTypeLaptop" name="deviceType" value="laptop">
+                <label for="deviceTypeLaptop">Laptop (Rp5.000/10 menit)</label></button>
+            </div>
+            <div class="form-group">
+                <label for="amount">Jumlah Pembayaran (Rp):</label>
+                <input type="number" id="amount" name="amount" min="2000" placeholder="Akan disesuaikan dengan jenis perangkat" required>
+            </div>
+            <button type="submit">Proses Pembayaran</button>
+        </form>
+
+        <div id="paymentStatus" class="hidden">
+            <h2>Status Pembayaran</h2>
+            <p id="statusMessage"></p>
+            <div id="loadingMessage" class="hidden">
+                <p>Mengarahkan Anda ke halaman pembayaran...</p>
+                <div class="spinner"></div>
+            </div>
+            <div id="qrCodeContainer" class="hidden">
+                <h3>Kode Akses Hotspot Anda:</h3>
+                <p id="accessCode" class="lolos-utbk"></p>
+                <p>Silakan scan QR code ini atau masukkan kode di atas pada halaman login hotspot Anda.</p>
+                <img id="qrCodeImage" src="" alt="QR Code Akses">
+                <p class="info-message">Catatan: QR code ini berisi kode voucher unik yang perlu dimasukkan ke portal login hotspot.</p>
+            </div>
+        </div>
+
+        <div class="pegel">
+            <h2>Riwayat Transaksi <button id="clearHistoryBtn" class="clear-button">X</button></h2>
+            <ul id="transactions">
+                </ul>
+        </div>
+         <p id=haki>© Copyright 2025 ikiaku</p>
+    </div>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
