@@ -17,8 +17,6 @@ A simple hotspot / tethering utility project built with html, css, js.
 
 ````
 
-> *(Adjust the structure above to match your actual project files.)*
-
 ---
 
 ## 📝 About the Project
