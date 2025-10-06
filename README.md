@@ -88,16 +88,6 @@ Contributions are welcome! Here’s how:
 
 ---
 
-## 📸 Screenshots / Demo
-
-> (Insert screenshots, GIFs or link to live demo to show the UI or functionality.)
-
----
-
-## 📄 License
-
-This project is licensed under the **[Your License]** — e.g. MIT, GPL-3.0, etc.
-
 ---
 
 ✍️ Created with ❤️ by [fahmiilmi14](https://github.com/fahmiilmi14)
